@@ -1,4 +1,4 @@
-# My Software Portfolio
+# My Developer Portfolio
 
 ## How to view:
 > Navigate [HERE](http://jseawell.github.io/)
