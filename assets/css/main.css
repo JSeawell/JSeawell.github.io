@@ -74,7 +74,8 @@ input, select, textarea {
 
 /* Style the navbar */
 #mainNavBar {
-  background-color: lightgray;
+  background-color: white;
+  opacity: 0.9;
   z-index: 5;
   list-style-type: none;
   overflow: hidden;
