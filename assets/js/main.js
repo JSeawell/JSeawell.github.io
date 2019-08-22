@@ -4,6 +4,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var mainNavbar = document.getElementById("mainNavBar");
+
+// Get the offset position of the navbar
+var sticky = mainNavBar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    mainNavBar.classList.add("sticky")
+  } else {
+    mainNavBar.classList.remove("sticky");
+  }
+}
+
 (function($) {
 
 	var	$window = $(window),
