@@ -415,16 +415,12 @@
 		    <!-- Scripts -->
 			
             <script>
-                function updateDateModified() {
-                    var x = new Date(document.lastModified);
-		    var y = x.split(" ", 4);
-		    var i;
-		    for (i = 0; i < y.length; i++) {
-                    	document.getElementById("demo").innerHTML += y[i];
-			document.getElementById("demo").innerHTML += " ";
-		    }
-                }
-            </script>
+		  function updateDateModified() {
+		  	var x = document.lastModified;
+		    	var y = x.split(" ", 1);
+		    	document.getElementById("demo").innerHTML += y;;
+		  }
+	    </script>
         
             <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
