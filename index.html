@@ -400,8 +400,7 @@
                             <li><a href="Resume6.0.pdf" class="icon style2 fa-user-circle"><span class="label">Resume</span></a></li>
                         </ul>
 
-                        <p>Last modified: </p>
-                        <p id="demo"></p><br>
+                        <p id="demo">Last modified: </p><br>
 			<p>Jake Seawell - My Portfolio. Design: &copy;<a href="https://html5up.net">HTML5 UP</a>.</p>
                         
                     </div>
@@ -417,8 +416,9 @@
 			
             <script>
                 function updateDateModified() {
-                    var x = document.lastModified;
-                    document.getElementById("demo").innerHTML = x;
+                    var x = new Date(document.lastModified);
+                    x = x.split(' ')[0];
+                    document.getElementById("demo").innerHTML += x;
                 }
             </script>
         
