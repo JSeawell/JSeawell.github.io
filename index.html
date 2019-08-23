@@ -417,7 +417,12 @@
             <script>
                 function updateDateModified() {
                     var x = new Date(document.lastModified);
-                    document.getElementById("demo").innerHTML += x;
+		    var y = x.split(" ", 4);
+		    var i;
+		    for (i = 0; i < y.length; i++) {
+                    	document.getElementById("demo").innerHTML += y[i];
+			document.getElementById("demo").innerHTML += " ";
+		    }
                 }
             </script>
         
