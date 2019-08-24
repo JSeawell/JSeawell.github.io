@@ -4,6 +4,7 @@
 > Navigate [HERE](http://jseawell.github.io/)
 
 ## What I learned:
-> 1. Version Control  
-> 2. GitFlow  
-> 3. Github pages
+> - Version Control  
+> - GitFlow  
+> - Github pages
+> - HTML/CSS/JavaScript
