@@ -30,7 +30,7 @@
                             <ul class="icons">
 								<li><a href="https://github.com/JSeawell" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://www.linkedin.com/in/jake-seawell-22b09062/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:jacob_seawell@yahoo.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li id="emailLink"><a href="mailto:jacob_seawell@yahoo.com" onclick="copyToClipboard()" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 								<li><a href="Resume.pdf" class="icon style2 fa-user-circle"><span class="label">Resume</span></a></li>
 							</ul>
 							
@@ -423,7 +423,24 @@
 		    	var y = x.split(" ", 1);
 		    	document.getElementById("demo").innerHTML += y;;
 		  }
+	    
+		  function copyToClipboard() {
+			  /* Get the text field */
+			  var copyText = document.getElementById("emailLink");
+
+			  /* Select the text field */
+			  copyText.select(); 
+			  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+			  /* Copy the text inside the text field */
+			  document.execCommand("copy");
+
+			  /* Alert the copied text */
+			  alert("Copied the text: " + copyText.value);
+		  }
 	    </script>
+		
+	    
         
             		<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
