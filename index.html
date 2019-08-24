@@ -30,10 +30,10 @@
                             <ul class="icons">
 								<li><a href="https://github.com/JSeawell" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://www.linkedin.com/in/jake-seawell-22b09062/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a onclick="copyEmailToClipboard(); return false;" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a onclick="copyEmailToClipboard('jacob_seawell@yahoo.com'); return false;" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 								<li><a href="Resume.pdf" class="icon style2 fa-user-circle"><span class="label">Resume</span></a></li>
 							</ul>
-							<input type="text" value="jacob_seawell@yahoo.com" id="emailLink" hidden>
+							<!--<input type="text" value="jacob_seawell@yahoo.com" id="emailLink" hidden>-->
 							
                             <p class="major">A brief look into my life as a software developer.</p>
 							
@@ -425,20 +425,16 @@
 		    	document.getElementById("demo").innerHTML += y;;
 		  }
 	    
-		  function copyEmailToClipboard() {
-			  /* Get the text field */
-			  var copyText = document.getElementById("emailLink");
-
-			  /* Select the text field */
-			  copyText.select(); 
-			  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-			  /* Copy the text inside the text field */
-			  document.execCommand("copy");
-
-			  /* Alert the copied text */
-			  alert("Copied the text: " + copyText.value);
+		  function copyEmailToClipboard(value) {
+			var tempInput = document.createElement("input");
+			tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+			tempInput.value = value;
+			document.body.appendChild(tempInput);
+			tempInput.select();
+			document.execCommand("copy");
+			document.body.removeChild(tempInput);
 		  }
+			    
 	    </script>
 		
 	    
