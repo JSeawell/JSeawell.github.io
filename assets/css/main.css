@@ -86,6 +86,13 @@ input, select, textarea {
   justify-content: center;
 }
 
+#mainNavBar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 div#navBar {
   margin: 0;
     height: 100px;
