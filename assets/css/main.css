@@ -75,7 +75,7 @@ input, select, textarea {
 }
 
 /* Style the navbar */
-#mainNavBar {
+#navBar {
   background-color: white;
   opacity: 0.9;
   z-index: 5;
@@ -86,17 +86,24 @@ input, select, textarea {
   justify-content: center;
 }
 
+div#navBar {
+  margin: 0;
+    height: 100px;
+}
+
 #mainNavItem {
   float: left;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin: 0;
+  transform: translateY(20%);
 }
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 0px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -107,8 +114,8 @@ input, select, textarea {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+.sticky + .allContent {
+  padding-top: 100px;
 }
 
 /* Display text copied to clipboard (email) */ 
