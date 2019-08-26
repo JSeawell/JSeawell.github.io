@@ -77,6 +77,8 @@ input, select, textarea {
 /* Style the arrows */
 #arrows {
     float: right;
+    position: absolute;
+    bottom: 0;
     
 }
 
