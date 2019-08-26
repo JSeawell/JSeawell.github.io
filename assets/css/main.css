@@ -74,6 +74,12 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Style the arrows */
+#arrows {
+    float: right;
+    
+}
+
 /* Style the navbar */
 #navBar {
   background-color: white;
