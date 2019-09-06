@@ -84,6 +84,7 @@ input, select, textarea {
 
 /* Style the navbar */
 #navBar {
+  width: 100%;
   background-color: white;
   opacity: 0.9;
   z-index: 5;
